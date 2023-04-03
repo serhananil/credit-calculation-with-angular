@@ -1,0 +1,19 @@
+<div class="card-body">
+  <form action="">
+    <div class="mb-3">
+      <label for="creditAmount" class="form-label">Kredi Tutarı</label>
+      <input type="number" class="form-control" id="creditAmount" name="creditAmount" [(ngModel)]="creditAmount">
+    </div>
+    <div class="mb-3">
+      <label for="installationAmount" class="form-label">Taksit Tutarı</label>
+      <select name="installationAmount" id="installationAmount" class="form-select" #installationAmount>
+        <option value="1">1</option>
+        <option value="6">6</option>
+        <option value="12">12</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <button (click)="calculate()" class="btn btn-outline-primary w-100">Hesapla</button>
+    </div>
+  </form>
+</div>
